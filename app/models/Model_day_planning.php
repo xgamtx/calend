@@ -1,15 +1,21 @@
 <?
+function convertDateTime($n)
+{
+	$temp=explode(' ',$n);
+	$date=explode('-',$temp[0]);
+	return $temp[1].' '.$date[2].'-'.$date[1].'-'.$date[0];
+}
 Class Model_day extends Model
 {
-	public $start_datetime;
-	public $end_datetime;
+	public $start;
+	public $end;
 	public $name;
 	
 	function __construct($data)
 	{
-		$this->start_date_time=$data['start'];
-		$this->end_date_time=$data['end'];
-		$this->name=$data['name'];
+		$this->start=convertDateTime($data->start);
+		$this->end=convertDateTime($data->end);
+		$this->name=$data->name;
 	}
 	
 	function get_data($data)

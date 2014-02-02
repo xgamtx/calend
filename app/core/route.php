@@ -19,10 +19,15 @@ Class Route
 		}
 		
 		$model_name="Model_".$controller_name;
+		$DBHelper_name="DBHelper_".$controller_name;
 		$controller_name="Controller_".$controller_name;
 		$action_name="action_".$action_name;
 
 		$model_file="app/models/".$model_name.".php";
+		if (file_exists($model_file))
+			include $model_file;
+
+		$model_file="app/models/DBHelper/".$DBHelper_name.".php";
 		if (file_exists($model_file))
 			include $model_file;
 
