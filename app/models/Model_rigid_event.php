@@ -1,9 +1,9 @@
 <?
 Class Model_rigid_event extends Model
 {
-	public $start;
-	public $end;
-	public $name;
+	protected $start;
+	protected $end;
+	protected $name;
 	
 	function __construct($data)
 	{
@@ -15,6 +15,18 @@ Class Model_rigid_event extends Model
 	function get_data($data)
 	{
 		return array('result'=>'ok');
+	}
+	function getName()
+	{
+		return $this->name;
+	}
+	function getStartTime()
+	{
+		return $this->start;
+	}
+	function getEndTime()
+	{
+		return $this->end;
 	}
 }
 ?>

@@ -1,11 +1,9 @@
 <?
 Class DBHelper_day extends DBHelper
 {
-	function get_data()
+	function get_data($date="")
 	{
-		if (isset($_GET['d']))
-			$date=$_GET['date'];
-		else
+		if ($date=='')
 			$date=date("Y-m-d");
 		if ($this->isConnected())
 		{

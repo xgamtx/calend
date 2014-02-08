@@ -9,8 +9,8 @@
 	</div>
 </div>
 <div id='gibk'>
-<?for ($i=0;$i<count($data);$i++){?>
-	<div><label><input type='checkbox'><?echo $data[$i]->name.'-'.$data[$i]->end;?></label></div>
+<?for ($i=0;$i<count($data->rigid_events);$i++){?>
+	<div><label><input type='checkbox'><?echo $data->rigid_events[$i]->getName().'-'.$data->rigid_events[$i]->getEndTime();?></label></div>
 <?}?>
 </div>
 <div id='cal'>

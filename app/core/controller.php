@@ -3,7 +3,6 @@ Class controller
 {
 	public $view;
 	public $model;
-	public $helper;
 	
 	
 	function __construct()
