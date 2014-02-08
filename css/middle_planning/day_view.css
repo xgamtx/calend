@@ -1,0 +1,9 @@
+#setka div{width:600px;height:30px;border-top:1px solid #ddd;border-bottom:1px dashed #ddd;margin-bottom:30px;position:relative}
+#setka div span{position:absolute;top: -9px;left: 612px;color:#ddd}
+#setka{overflow:scroll;height:100%;;background:#eee;width:650px}
+#day_event{width: 650px;float: left;}
+#gibk{border:1px solid #000;height:50%;margin-left:670px;font-size:12px;padding:3px;overflow:scroll}
+#cal{margin-left:670px;padding-top:50px}
+#date{font-size:177px;margin-left:40px;float:left}
+#cal table{font-size:24px;padding-top:20px;margin-left:256px}
+#cal table a{color:#000;text-decoration:none}

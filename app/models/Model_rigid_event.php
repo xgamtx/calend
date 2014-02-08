@@ -1,12 +1,5 @@
 <?
-function convertDateTime($n)
-{
-	$temp=explode(' ',$n);
-	$date=explode('-',$temp[0]);
-	return $temp[1].' '.$date[2].'-'.$date[1].'-'.$date[0];
-}
-require_once("app/models/Model_rigid_event.php");
-Class Model_day extends Model
+Class Model_rigid_event extends Model
 {
 	public $start;
 	public $end;

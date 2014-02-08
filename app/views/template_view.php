@@ -13,15 +13,21 @@
 		<script type="text/javascript" src="/js/jquery-1.6.2.js"></script>
 		<script> 
 		$(document).ready(function(){
-		  $(document).scroll(function(){
+				var page_h = $(window).height()-$("nav").height();
+				$("#day_event").height(page_h);
+				$("#gibk").height(page_h/2);
+			function window_resize(){
+				var page_h = $(window).height()-$("nav").height();
+				$("#day_event").height(page_h);
+			};
+<?/*		  $(document).scroll(function(){
 		  	if ($(document).scrollTop()>$('nav').children('ul').outerHeight(true))
 			  	$('nav').children('ul').css('top',$(document).scrollTop()+'px');
 			else
 				$('nav').children('ul').css('top','0');
-		  });
+		  });*/?>
 		});
 		</script> 
-
 	</head>
 	<body>
 	<nav>

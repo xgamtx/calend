@@ -1,6 +1,6 @@
-nav{font-family: 'PT Sans Caption', sans-serif;position:relative;height:65px;}
+nav{font-family: 'PT Sans Caption', sans-serif;position:relative;height:65px;margin: auto;width: 688px;}
 nav a{display:block;width:150px;height:45px;border:1px solid #000;text-align:center;text-decoration:none;padding:10px;color:#ccc;font-style:oblique;background:rgba(255,255,255,0.9)}
 nav li{display:block;float:left}
 ul,html,body{padding:0;margin:0}
-body{height:1000px}
+body{height:100%}
 nav ul{position:absolute;top:0;left:0}

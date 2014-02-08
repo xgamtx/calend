@@ -7,9 +7,6 @@ class Controller_day_planning extends Controller
 	function __construct()
 	{
 		$this->helper=new DBHelper_day();
-//		$dat=array('0'=>array('start'=>'2012-10-12','end'=>'2013-11-11','name'=>'Вася'),'1'=>array('start'=>'2012-10-12','end'=>'2013-11-11','name'=>'Вася1'),'2'=>array('start'=>'2012-10-12','end'=>'2013-11-11','name'=>'Вася2'));
-//		foreach ($dat as $param)
-//			$this->models[]=new Model_day($param);
 		$this->view=new View();
 	}
 	function action_index()
@@ -28,3 +25,4 @@ class Controller_day_planning extends Controller
 	}
 
 }
+?>
