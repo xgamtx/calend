@@ -7,7 +7,7 @@ Class DBHelper_day extends DBHelper
 			$date=date("Y-m-d");
 		if ($this->isConnected())
 		{
-			$result=$this->mysql_connect->query("Select * from event where (`start`>='$date 00:00:00' and `start`<='$date 23:59:59') or (`end`>='$date 00:00:00' and `end`<='$date 23:59:59') order by id asc");
+			$result=$this->mysql_connect->query("Select * from event where `date`='$date' order by id asc");
 			if ($result)
 			{
 				$data=array();

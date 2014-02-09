@@ -1,9 +1,13 @@
-#setka div{width:600px;height:30px;border-top:1px solid #ddd;border-bottom:1px dashed #ddd;margin-bottom:30px;position:relative}
-#setka div span{position:absolute;top: -9px;left: 612px;color:#ddd}
-#setka{overflow:scroll;height:100%;;background:#eee;width:650px}
-#day_event{width: 650px;float: left;}
-#gibk{border:1px solid #000;height:50%;margin-left:670px;font-size:12px;padding:3px;overflow:scroll}
+#setka div{width:600px;height:29px;border-top:1px solid #ddd;border-bottom:1px dashed #ddd;margin-bottom:29px;position:relative}
+#setka div span{position:absolute;top: -9px;left: 612px;color:#aaa}
+#setka{height:100%;width:650px}
+#day_event{width: 650px;float: left;position: relative;overflow:scroll;background:#eee;}
+#gibk{border:1px solid #000;height:50%;margin-left:670px;font-size:12px;padding:3px;overflow:scroll;}
 #cal{margin-left:670px;padding-top:50px}
 #date{font-size:177px;margin-left:40px;float:left}
 #cal table{font-size:24px;padding-top:20px;margin-left:256px}
 #cal table a{color:#000;text-decoration:none}
+#rigid_events{position:absolute;top:0;left:0}
+#rigid_events div{position:absolute;width:590px;border:1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;padding:5px;font-size:12px}
+#day_event div#edit_rigid{position:absolute;left:300px;height:100px;width:300px;border:1px solid #ddd;top:0;z-index:12;background:#fff;padding:10px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;}
+#setka div#gluh{height:0;border:1px solid #eee}
