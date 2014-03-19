@@ -24,4 +24,4 @@ $( window ).resize(function() {
 	var page_h = $(window).height()-$("#nav").height();
 	$("#day_event").height(page_h);
 	$("#gibk").height(page_h/2);
-});
+}); 
